@@ -1,10 +1,11 @@
-//
-//  AppDelegate.h
-//  DetectingSoundFrequency
-//
-//  Created by Mac on 2/26/14.
-//  Copyright (c) 2014 Mac. All rights reserved.
-//
+
+
+/* This project illustrates the work of stuff described in this stackoverflow.com answer:
+http://stackoverflow.com/questions/11686625/get-hz-frequency-from-audio-stream-on-iphone/19966776#19966776
+ */
+
+
+
 
 #import <UIKit/UIKit.h>
 

@@ -11,16 +11,23 @@
 		04808C1C18BE868300E685F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C1B18BE868300E685F1 /* CoreGraphics.framework */; };
 		04808C1E18BE868300E685F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C1D18BE868300E685F1 /* UIKit.framework */; };
 		04808C2418BE868300E685F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04808C2218BE868300E685F1 /* InfoPlist.strings */; };
-		04808C2618BE868300E685F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04808C2518BE868300E685F1 /* main.m */; };
-		04808C2A18BE868300E685F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04808C2918BE868300E685F1 /* AppDelegate.m */; };
+		04808C2618BE868300E685F1 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04808C2518BE868300E685F1 /* main.mm */; };
+		04808C2A18BE868300E685F1 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04808C2918BE868300E685F1 /* AppDelegate.mm */; };
 		04808C2D18BE868300E685F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04808C2B18BE868300E685F1 /* Main.storyboard */; };
-		04808C3018BE868300E685F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04808C2F18BE868300E685F1 /* ViewController.m */; };
+		04808C3018BE868300E685F1 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04808C2F18BE868300E685F1 /* ViewController.mm */; };
 		04808C3218BE868300E685F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04808C3118BE868300E685F1 /* Images.xcassets */; };
 		04808C3918BE868300E685F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C3818BE868300E685F1 /* XCTest.framework */; };
 		04808C3A18BE868300E685F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C1918BE868300E685F1 /* Foundation.framework */; };
 		04808C3B18BE868300E685F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C1D18BE868300E685F1 /* UIKit.framework */; };
 		04808C4318BE868300E685F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04808C4118BE868300E685F1 /* InfoPlist.strings */; };
 		04808C4518BE868300E685F1 /* DetectingSoundFrequencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04808C4418BE868300E685F1 /* DetectingSoundFrequencyTests.m */; };
+		04808C5018BE88E800E685F1 /* FFTHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04808C4F18BE88E800E685F1 /* FFTHelper.mm */; };
+		04808C5C18C009B000E685F1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C5B18C009B000E685F1 /* Accelerate.framework */; };
+		04808C5E18C009C000E685F1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C5D18C009C000E685F1 /* AudioToolbox.framework */; };
+		04808C6018C009D200E685F1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C5F18C009D200E685F1 /* MediaPlayer.framework */; };
+		04808C6218C009F500E685F1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04808C6118C009F500E685F1 /* OpenGLES.framework */; };
+		04808C6818C00D8200E685F1 /* mo_audio.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04808C6518C00D8200E685F1 /* mo_audio.mm */; };
+		04808C6918C00D8200E685F1 /* mo_gfx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04808C6718C00D8200E685F1 /* mo_gfx.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,19 +47,30 @@
 		04808C1D18BE868300E685F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04808C2118BE868300E685F1 /* DetectingSoundFrequency-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DetectingSoundFrequency-Info.plist"; sourceTree = "<group>"; };
 		04808C2318BE868300E685F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		04808C2518BE868300E685F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04808C2518BE868300E685F1 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		04808C2718BE868300E685F1 /* DetectingSoundFrequency-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DetectingSoundFrequency-Prefix.pch"; sourceTree = "<group>"; };
 		04808C2818BE868300E685F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		04808C2918BE868300E685F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04808C2918BE868300E685F1 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		04808C2C18BE868300E685F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04808C2E18BE868300E685F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		04808C2F18BE868300E685F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04808C2F18BE868300E685F1 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		04808C3118BE868300E685F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04808C3718BE868300E685F1 /* DetectingSoundFrequencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectingSoundFrequencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04808C3818BE868300E685F1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		04808C4018BE868300E685F1 /* DetectingSoundFrequencyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DetectingSoundFrequencyTests-Info.plist"; sourceTree = "<group>"; };
 		04808C4218BE868300E685F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04808C4418BE868300E685F1 /* DetectingSoundFrequencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetectingSoundFrequencyTests.m; sourceTree = "<group>"; };
+		04808C4E18BE88E800E685F1 /* FFTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTHelper.h; sourceTree = "<group>"; };
+		04808C4F18BE88E800E685F1 /* FFTHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FFTHelper.mm; sourceTree = "<group>"; };
+		04808C5B18C009B000E685F1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		04808C5D18C009C000E685F1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		04808C5F18C009D200E685F1 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		04808C6118C009F500E685F1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		04808C6318C00D8200E685F1 /* mo_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mo_def.h; sourceTree = "<group>"; };
+		04808C6418C00D8200E685F1 /* mo_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mo_audio.h; sourceTree = "<group>"; };
+		04808C6518C00D8200E685F1 /* mo_audio.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mo_audio.mm; sourceTree = "<group>"; };
+		04808C6618C00D8200E685F1 /* mo_gfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mo_gfx.h; sourceTree = "<group>"; };
+		04808C6718C00D8200E685F1 /* mo_gfx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mo_gfx.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04808C6218C009F500E685F1 /* OpenGLES.framework in Frameworks */,
+				04808C6018C009D200E685F1 /* MediaPlayer.framework in Frameworks */,
+				04808C5E18C009C000E685F1 /* AudioToolbox.framework in Frameworks */,
+				04808C5C18C009B000E685F1 /* Accelerate.framework in Frameworks */,
 				04808C1C18BE868300E685F1 /* CoreGraphics.framework in Frameworks */,
 				04808C1E18BE868300E685F1 /* UIKit.framework in Frameworks */,
 				04808C1A18BE868300E685F1 /* Foundation.framework in Frameworks */,
@@ -101,6 +123,10 @@
 		04808C1818BE868300E685F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04808C6118C009F500E685F1 /* OpenGLES.framework */,
+				04808C5F18C009D200E685F1 /* MediaPlayer.framework */,
+				04808C5D18C009C000E685F1 /* AudioToolbox.framework */,
+				04808C5B18C009B000E685F1 /* Accelerate.framework */,
 				04808C1918BE868300E685F1 /* Foundation.framework */,
 				04808C1B18BE868300E685F1 /* CoreGraphics.framework */,
 				04808C1D18BE868300E685F1 /* UIKit.framework */,
@@ -112,11 +138,14 @@
 		04808C1F18BE868300E685F1 /* DetectingSoundFrequency */ = {
 			isa = PBXGroup;
 			children = (
+				04808C5918BE896900E685F1 /* momu source */,
 				04808C2818BE868300E685F1 /* AppDelegate.h */,
-				04808C2918BE868300E685F1 /* AppDelegate.m */,
+				04808C2918BE868300E685F1 /* AppDelegate.mm */,
 				04808C2B18BE868300E685F1 /* Main.storyboard */,
 				04808C2E18BE868300E685F1 /* ViewController.h */,
-				04808C2F18BE868300E685F1 /* ViewController.m */,
+				04808C2F18BE868300E685F1 /* ViewController.mm */,
+				04808C4E18BE88E800E685F1 /* FFTHelper.h */,
+				04808C4F18BE88E800E685F1 /* FFTHelper.mm */,
 				04808C3118BE868300E685F1 /* Images.xcassets */,
 				04808C2018BE868300E685F1 /* Supporting Files */,
 			);
@@ -128,7 +157,7 @@
 			children = (
 				04808C2118BE868300E685F1 /* DetectingSoundFrequency-Info.plist */,
 				04808C2218BE868300E685F1 /* InfoPlist.strings */,
-				04808C2518BE868300E685F1 /* main.m */,
+				04808C2518BE868300E685F1 /* main.mm */,
 				04808C2718BE868300E685F1 /* DetectingSoundFrequency-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -150,6 +179,18 @@
 				04808C4118BE868300E685F1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04808C5918BE896900E685F1 /* momu source */ = {
+			isa = PBXGroup;
+			children = (
+				04808C6318C00D8200E685F1 /* mo_def.h */,
+				04808C6418C00D8200E685F1 /* mo_audio.h */,
+				04808C6518C00D8200E685F1 /* mo_audio.mm */,
+				04808C6618C00D8200E685F1 /* mo_gfx.h */,
+				04808C6718C00D8200E685F1 /* mo_gfx.mm */,
+			);
+			name = "momu source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04808C3018BE868300E685F1 /* ViewController.m in Sources */,
-				04808C2A18BE868300E685F1 /* AppDelegate.m in Sources */,
-				04808C2618BE868300E685F1 /* main.m in Sources */,
+				04808C5018BE88E800E685F1 /* FFTHelper.mm in Sources */,
+				04808C3018BE868300E685F1 /* ViewController.mm in Sources */,
+				04808C2A18BE868300E685F1 /* AppDelegate.mm in Sources */,
+				04808C6818C00D8200E685F1 /* mo_audio.mm in Sources */,
+				04808C2618BE868300E685F1 /* main.mm in Sources */,
+				04808C6918C00D8200E685F1 /* mo_gfx.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +504,7 @@
 				04808C4A18BE868300E685F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04808C4B18BE868300E685F1 /* Build configuration list for PBXNativeTarget "DetectingSoundFrequencyTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +513,7 @@
 				04808C4D18BE868300E685F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
