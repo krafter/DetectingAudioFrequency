@@ -85,7 +85,14 @@ static Float32 vectorMaxValueACC32_index(Float32 *vector, unsigned long size, lo
 
 ///returns HZ of the strongest frequency.
 static Float32 strongestFrequencyHZ(Float32 *buffer, FFTHelperRef *fftHelper, UInt32 frameSize, Float32 *freqValue) {
+    
+    
+    //the actual FFT happens here
+    //****************************************************************************
     Float32 *fftData = computeFFT(fftHelper, buffer, frameSize);
+    //****************************************************************************
+    
+    
     fftData[0] = 0.0;
     unsigned long length = frameSize/2.0;
     Float32 max = 0;
